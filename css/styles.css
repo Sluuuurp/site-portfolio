@@ -1,0 +1,217 @@
+/* decla des variables
+dimension limite 1400 px
+
+mediaquery en dessous des elmements en relation */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #F05F40;
+    --secondary-color: rgba(0, 0, 0, 0.9);
+    --white-police: white;
+    --dark-police: black; 
+    --titre: "Open sans";
+    --texte: "Merriweather";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1400px;
+    margin: auto;
+    font-size: 1.25rem;
+    /* inserer un background idependant (pourquoi pas avec une effet paralax) */
+
+}
+
+h1,h2,h3,h4{
+    font-family: var(--titre);
+}
+
+p{
+    font-family: var(--texte);
+}
+
+a{
+    text-decoration: none;
+}
+
+/************************************** HEADER ***********************************/
+
+.en-tete{
+    padding: 2%;
+    color: var(--white-police);
+    background-color: var(--secondary-color);
+    height: 100vh;
+
+    a{
+        color: var(--white-police);
+        font-family: var(--titre);
+        font-weight: 600;
+    }
+}
+
+.en-tete__nom{
+    font-size: 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+ul{
+    max-width: 40%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    list-style: none;   
+}
+
+
+.en-tete__presentation{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20vh;
+    max-width: 40%;
+    text-align: center;
+}
+
+.ligne{ 
+    width: 25%;
+    height: 10px;
+    background-color: var(--primary-color);
+    margin: 10% auto;
+}
+
+.en-tete__bouton{
+    margin: 20% auto;
+    border-radius: 5px;
+    padding: 12px 30px; ;
+    background-color: var(--primary-color);
+}
+
+
+
+/********************** A PROPOS DE MOI ***************************/
+
+.a-propos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 50vh;
+}
+
+.ligne-blanche{
+    width: 16%;
+    height: 10px;
+    background-color: var(--white-police);
+    margin: 5% auto;
+}
+
+.a-propos__contenu{
+    margin-top: 5%;
+    max-width: 60%;
+    text-align: center;
+    color: var(--white-police);
+}
+
+
+/********************** POUR TELECHARGER ***************************/
+
+.telecharger{
+    color: var(--white-police);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    
+
+    a{
+        color: var(--white-police);
+        font-family: var(--titre);
+        font-weight: 600;
+    }
+
+}
+
+.telecharger a{
+    margin: 55px auto;
+    border-radius: 5px;
+    padding: 12px 30px; ;
+    background-color: var(--primary-color);
+}
+
+
+/********************** CENTRE D'INTERET ***************************/
+.centre_interet{
+    text-align: center;
+    margin: 70px 0px;
+    overflow-y: clip;
+}
+
+.tuile_centre_interet{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 70px;
+    height: 735px;
+}
+
+.tuile_centre_interet img{
+    width: 350px;
+    aspect-ratio: 1/2.1;
+}
+
+.centre_interet__ligne{
+    width: 9.60%;
+    height: 10px;
+    background-color: var(--primary-color);
+    margin: 55px auto;
+}
+
+.tuile_texte{
+    position: absolute;
+    top: 93.5%;
+    width: 350px;
+    background-color: var(--secondary-color);
+    color: var(--white-police);
+    line-height: 35px;
+    opacity: 0.8;
+    padding-top: 7px;
+
+    p{
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+}
+
+article:hover .tuile_texte{
+    animation: transi linear 0.25s both;
+    animation-timeline: scroll;
+}
+
+@keyframes transi {
+    0%{ top: 93.5%;}
+    100%{top: 65.2%}
+}
+
+
+
+
+
+
+
+
+
+
