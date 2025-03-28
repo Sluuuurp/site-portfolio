@@ -158,25 +158,27 @@
             <h3>Pour me contacter</h3>
 
             <form action="" method="get">
+                <div class="contact__nom&mail">
+                    <p>
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" maxlength="25">
+                    </p>
 
-                <p>
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" maxlength="25">
-                </p>
+                    <p>
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="mail" id="mail" maxlength="50">
+                    </p>
+                </div>
 
-                <p>
-                    <label for="mail">E-mail</label>
-                    <input type="email" name="mail" id="mail" maxlength="50">
-                </p>
-
-                <p>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                </p>
-
-                <input type="submit" name="Envoyer" id="envoyer">
+                <div class="contact__txt-area">
+                    <p>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </p>   
+                </div> 
             </form>
 
+            <input type="submit" name="Envoyer" id="envoyer"> 
 
         </section>
 

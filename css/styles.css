@@ -207,11 +207,17 @@ article:hover .tuile_texte{
 }
 
 
+/********************** FORMULAIRE ***************************/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
 
-
-
-
-
-
+form{
+    display: flex;
+}
 
