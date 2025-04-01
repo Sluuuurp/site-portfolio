@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -153,28 +154,30 @@
         </section>
 
         <section id="Contact" class="contact">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
 
-            <h3>Pour me contacter</h3>
+            <div class="contact__ligne">
+            </div>
+
+            <p>Pour me contacter</p>
 
             <form action="" method="get">
-                <div class="contact__nom&mail">
-                    <p>
-                        <label for="nom">Nom</label>
-                        <input type="text" name="nom" id="nom" maxlength="25">
-                    </p>
-
-                    <p>
-                        <label for="mail">E-mail</label>
+                <div class="contact__nom-mail">
+                    <div>
+                        <label for="nom"><i class="fa-solid fa-circle-dot fa-xs"></i>Nom</label>
+                        <input type="text" name="nom" id="nom" maxlength="30">
+                    </div>
+                    <div>
+                        <label for="mail"><i class="fa-solid fa-circle-dot fa-xs"></i>E-mail</label>
                         <input type="email" name="mail" id="mail" maxlength="50">
-                    </p>
+                    </div>
                 </div>
 
                 <div class="contact__txt-area">
-                    <p>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </p>   
+                    
+                    <label for="message"><i class="fa-solid fa-circle-dot fa-xs"></i>Message</label>
+                    <textarea name="message" id="message"></textarea>
+                     
                 </div> 
             </form>
 
@@ -182,7 +185,7 @@
 
         </section>
 
-        <footer>
+        <footer class="pied-page">
             <p>Florian ALEXANDRE | 2025</p>
         </footer>
 

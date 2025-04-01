@@ -85,13 +85,13 @@ ul{
 
 .ligne{ 
     width: 25%;
-    height: 10px;
+    height: 8px;
     background-color: var(--primary-color);
     margin: 10% auto;
 }
 
 .en-tete__bouton{
-    margin: 20% auto;
+    margin: 10% auto;
     border-radius: 5px;
     padding: 12px 30px; ;
     background-color: var(--primary-color);
@@ -175,7 +175,7 @@ ul{
 
 .centre_interet__ligne{
     width: 9.60%;
-    height: 10px;
+    height: 8px;
     background-color: var(--primary-color);
     margin: 55px auto;
 }
@@ -216,8 +216,88 @@ article:hover .tuile_texte{
     
 }
 
-
 form{
     display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;  
 }
 
+label{
+    font-size: 1.35rem;
+    margin: 15px 0;
+}
+
+input{
+    width: 100%;
+    height: 35px;
+    font-size: 1.1rem;
+}
+
+.contact__nom-mail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    margin-top: 50px;
+}
+
+.contact__nom-mail div{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__txt-area{
+    margin-top: 25px;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    height: 300px;
+    font-size: 1.1rem;
+    resize: vertical;
+}
+
+#envoyer{
+    margin-top: 40px;
+    width: 150px;
+    border: 0;
+    border-radius: 2%;
+    background-color: var(--primary-color);
+    color: var(--white-police);
+    font-family: var(--titre);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.contact__ligne{
+    background-color: var(--primary-color);
+    width: 5.70%;
+    height: 8px;
+    margin: 40px 0;
+}
+
+.fa-solid{
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+
+/********************** FOOTER ***************************/
+
+footer{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--white-police);
+    height: 15vh;
+}
+
+.pied-page{
+    font-size: 1rem;
+}
