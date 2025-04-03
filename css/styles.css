@@ -10,7 +10,7 @@ html{
 
 :root {
     --primary-color: #F05F40;
-    --secondary-color: rgba(0, 0, 0, 0.9);
+    --secondary-color: rgba(0, 0, 0, 0.8);
     --white-police: white;
     --dark-police: black; 
     --titre: "Open sans";
@@ -24,7 +24,6 @@ html{
 }
 
 body{
-    max-width: 1400px;
     margin: auto;
     font-size: 1.rem;
     /* inserer un background idependant (pourquoi pas avec une effet paralax) */
