@@ -1,5 +1,30 @@
-// gestion de l'anim des tuiles
+// *********************************SECTION FOND ANIMER *******************************
 
+const divAnim = document.querySelectorAll('.anim-fond p')
+//créé les chiffre
+function creaChiffre() {
+    let monBinaire = '';
+    for (let i = 0; i < 8; i++) {
+      monBinaire += Math.random() > 0.5 ? '1' : '0';
+    }
+    return monBinaire;
+  }
+
+//Affiche l'animation
+setInterval(() => {
+    divAnim.forEach(chiffre =>{
+    chiffre.textContent = creaChiffre();
+    }) 
+}, 100); // Intervalle de 100ms entre chaque changement de binaire
+
+
+
+
+
+
+// *********************************SECTION PARCOURS*************************************
+
+// gestion de l'anim des tuiles
 const tuiles = document.querySelectorAll(".parcours__tuile")
 
 tuiles.forEach(tuile =>{
