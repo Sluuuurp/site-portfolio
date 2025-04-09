@@ -18,6 +18,28 @@ setInterval(() => {
 }, 100); // Intervalle de 100ms entre chaque changement de binaire
 
 
+// *********************************ECRITURE DU TITRE *******************************
+const anim1 = document.querySelector('.ecriture-anim1')
+console.log(anim1)
+const anim2 = document.querySelector('.ecriture-anim2')
+
+// anim1.addEventListener('animationend', ()=> {
+//     anim1.style.border = 'none'
+// })
+
+// anim2.addEventListener('animationstart', ()=> {
+//     anim2.style.borderRight = '15px solid white'
+// })
+
+
+
+setTimeout(() => {
+    anim1.style.border = 'none'
+}, 1600);
+
+setTimeout(() => {
+    anim2.style.borderRight = '15px solid white'
+}, 1600);
 
 
 
